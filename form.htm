@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;500;600&display=swap" rel="stylesheet">
+    <title>Form</title>
+    <style>
+        body{
+            width: 700px;
+            margin: 0 auto;
+            background: #eee;
+            font-family: "Barlow Semi Condensed", sans-serif;
+        }
+        input, select{
+            width: 100%;
+            padding: 12px 12px 0 0;
+            margin: 1rem 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 1rem;
+        }
+        input[id=gender]{
+            display: inline-flex;
+        }
+        input[placeholder]{
+            padding: 0.5rem;
+        }
+        input[type=submit]{
+            width: 100%;
+            background-color: hsl(263, 52%, 55%);
+            color: #fff;
+            padding: 14px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type=submit]:hover{
+            border: 3px solid gray;
+        }
+        label{
+            background: purple;
+            color: #eee;
+            padding: 1rem;
+            border-radius: 3px;
+            
+        }
+        form[method=GET] > label{
+            background-color: rgba(229, 255, 0, 0.829);
+            color: grey;
+        }
+        form[method=GET] > input[type=submit]{
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <form action="">
+        <label for="yourName">Surname</label>
+        <input type="text" id="yourName" placeholder="First Name">
+
+        <label for="lastName"> Name</label>
+        <input type="text" id="lastName" placeholder="Last Name">
+
+        <label for="yourNumber">Phone Number</label>
+        <input type="number" id="yourNumber" placeholder="phone number">
+
+       
+        <label for="Country">Country</label>
+        <select name="" id="Country" required>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Djibouti">Djibouti</option>
+            <option value="USA">USA</option>
+            <option value="Libya">Libya</option>
+        </select>
+
+        <input type="submit" value="Submit">
+        
+    </form>
+    <form action="colorkit.htm" method="GET">
+        <h1>LOGIN</h1>
+        <label for="yourEmail">Email</label>
+        <input type="email" id="yourEmail" placeholder="Email address">
+
+        <label for="yourPassword">Password</label>
+        <input type="password" id="yourPassword" placeholder="Password">
+
+        <label for="url">URL</label>
+        <input type="url" name="homepage" id="url">
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        
+        <br><br>
+    </form>
+    <form action="">
+        <label for="list"> Your Browser</label>
+        <input type="text" list="browsers" id="list" placeholder="Browser">
+        <datalist id="browsers">
+            <option value="Internet Explorer"></option>
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Safari"></option>
+            <option value="Opera"></option>
+        </datalist>
+
+       
+    </form>
+    <form action="">
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="gender" value="Male">Male
+        <input type="radio" name="gender" id="gender" value="Female">Female
+    </form>
+    <br><br>
+        Call me here <a href="tel:234 902 720 3288">+234 902 720 3288</a> <br><br>
+        Email me here  <a href="mailto:info@ikramahikramah8@gmail.com"> Email </a><br><br>
+        Chat me on WhatsApp <a href="https://api.whatsapp.com/send?phone=9027203288">WhatsApp</a>
+        <!-- <a href="mailto:idowu1294@gmail.com">Idowu</a> -->
+       
+</body>
+</html>

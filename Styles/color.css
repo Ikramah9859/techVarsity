@@ -1,0 +1,63 @@
+body{
+    background-color: gold;
+}
+h1{
+    background-color: black;
+    color: #fff;
+    border-left: 5px solid yellow;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 300px;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+h1:hover{
+    border-left: 5px double chartreuse;
+}
+.colorlist li{
+     display: inline-block;
+     margin-top: 150px;
+     border: 1px solid gray;
+     font-size: 14px;
+     padding: 10px;
+     border-radius: 10px;
+}
+.colorlist{
+    text-align: center;
+}
+div{
+    background-color: #fff;
+}
+
+.red:hover, .yellow:hover, .green:hover,.blue:hover, 
+.pink:hover, .purple:hover, .orange:hover {
+    width: 100px;
+    height: 100px;
+    color: white;
+    line-height: 10px;
+    border-radius: 100%;
+
+}
+.red:hover{
+    background-color: red;
+}
+.yellow:hover{
+    background-color: yellow;
+}
+.green:hover{
+    background-color: green;
+}
+.blue:hover{
+    background-color: blue;
+}
+.pink:hover{
+    background-color: pink;
+}
+.purple:hover{
+    background-color: purple;
+}
+.orange:hover{
+    background-color: orange;
+}
